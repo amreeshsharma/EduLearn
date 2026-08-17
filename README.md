@@ -1,8 +1,8 @@
-# 🎓 EduLearn
+🎓 EduLearn
 
 > A modern and responsive educational platform designed to provide students with a simple, engaging, and user-friendly learning experience.
 
-## 📌 About The Project
+📌 About The Project
 
 **EduLearn** is a frontend educational website created to provide students with an organized platform for exploring courses, accessing learning resources, and managing their student experience.
 
@@ -10,7 +10,7 @@ The project focuses on a clean user interface, responsive layouts, simple naviga
 
 This project was developed as a frontend web development project to practice and demonstrate skills in **HTML, CSS, responsive design, UI/UX, and website structure**.
 
-## ✨ Features
+✨ Features
 
 * 🏠 Modern home page
 * 📚 Course browsing section
