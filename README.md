@@ -186,5 +186,6 @@ You are welcome to explore and learn from the project.
 ---
 
 ⭐ If you find this project useful, consider giving the repository a star!
+Thank you for exploring me 
 
 **EduLearn — Learn. Grow. Succeed. 🎓**
