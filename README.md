@@ -1,6 +1,7 @@
 🎓 EduLearn
 
-> A modern and responsive educational platform designed to provide students with a simple, engaging, and user-friendly learning experience.
+> A modern and responsive educational platform designed to provide students with a simple, engaging, and user-friendly learning experience. 
+
 
 📌 About The Project
 
