@@ -1,0 +1,451 @@
+/* ==========================================================================
+   EDULEARN - REFUND POLICY STYLESHEET (css/refund.css)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #eef2ff;
+    --secondary: #7c3aed;
+    --accent: #2563eb;
+    --dark: #0f172a;
+    --dark-alt: #1e293b;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --card-border: #e2e8f0;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+    --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 35px -5px rgba(15, 23, 42, 0.15);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar {
+    background: linear-gradient(135deg, #0d0225 0%, #1e1b4b 100%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.5px;
+}
+
+.logo i {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 0;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #a5b4fc;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.login-btn {
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 9px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.register-btn {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 14.5px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35);
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.5);
+}
+
+.nav-toggle-checkbox {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--white);
+    padding: 6px;
+}
+
+/* ==========================================================================
+   PAGE BANNER / HERO
+   ========================================================================== */
+.refund-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #31104b 100%);
+    padding: 70px 0 80px;
+    color: var(--white);
+    text-align: center;
+    position: relative;
+}
+
+.refund-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 6px 18px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    color: #a5b4fc;
+}
+
+.refund-hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.refund-hero p {
+    font-size: 16px;
+    color: #cbd5e1;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   REFUND CONTENT SECTION
+   ========================================================================== */
+.refund-main {
+    padding: 70px 0 95px;
+}
+
+.refund-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* Guarantee Highlight Banner */
+.guarantee-card {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: var(--radius-md);
+    padding: 35px 30px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.25);
+}
+
+.guarantee-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.guarantee-text h2 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.guarantee-text p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Card Sections */
+.refund-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--card-border);
+    padding: 35px;
+    box-shadow: var(--shadow-sm);
+}
+
+.refund-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.refund-card h3 i {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.refund-card p {
+    color: #475569;
+    font-size: 14.5px;
+    line-height: 1.75;
+    margin-bottom: 12px;
+}
+
+.refund-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.refund-card ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.refund-card ul li i {
+    color: var(--primary);
+    margin-top: 4px;
+    flex-shrink: 0;
+}
+
+/* Step Process Grid */
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.step-box {
+    background: #f8fafc;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-sm);
+    padding: 22px 18px;
+    text-align: center;
+    position: relative;
+}
+
+.step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.step-box h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 6px;
+}
+
+.step-box p {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Contact Support Box */
+.refund-contact-card {
+    background: linear-gradient(135deg, #0d0225, #1e1b4b);
+    border-radius: var(--radius-md);
+    padding: 35px 30px;
+    color: var(--white);
+    text-align: center;
+}
+
+.refund-contact-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #a5b4fc;
+}
+
+.refund-contact-card p {
+    color: #cbd5e1;
+    font-size: 14.5px;
+    max-width: 540px;
+    margin: 0 auto 20px;
+}
+
+.refund-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 12px 26px;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 14.5px;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
+.refund-contact-btn:hover {
+    transform: translateY(-2px);
+    color: var(--white);
+    filter: brightness(1.1);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 868px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: #0d0225;
+        flex-direction: column;
+        padding: 25px 0;
+        gap: 18px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .guarantee-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .refund-card {
+        padding: 24px 18px;
+    }
+
+    .refund-hero h1 {
+        font-size: 32px;
+    }
+}

@@ -1,196 +1,131 @@
-🎓 EduLearn
+# 🎓 EduLearn — Modern Educational Web Platform
 
-> A modern and responsive educational platform designed to provide students with a simple, engaging, and user-friendly learning experience. 
+> **Tagline:** *"Learn. Grow. Succeed."*
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![FontAwesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive_Design-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)
 
-📌 About The Project
+---
 
-**EduLearn** is a frontend educational website created to provide students with an organized platform for exploring courses, accessing learning resources, and managing their student experience.
+## 📌 Project Overview
 
-The project focuses on a clean user interface, responsive layouts, simple navigation, and a smooth experience across different screen sizes.
+**EduLearn** is a professional, modern, and fully responsive e-learning website built using **pure semantic HTML5 and Vanilla CSS3**.
 
-This project was developed as a frontend web development project to practice and demonstrate skills in **HTML, CSS, responsive design, UI/UX, and website structure**.
+Designed specifically as a high-standard web development showcase and college presentation project, EduLearn provides students with an engaging platform to discover high-quality technical courses, view in-depth curricula, register securely, track learning progress, and explore legal and support services.
 
-✨ Features
+---
 
-* 🏠 Modern home page
-* 📚 Course browsing section
-* 📖 Course details page
-* 👨‍🎓 Student dashboard
-* 🔐 Login and registration pages
-* 📞 Contact page
-* ℹ️ About page
-* 🔒 Privacy policy page
-* 💳 Refund policy page
-* 📱 Fully responsive design
-* 🎨 Clean and modern UI
-* 🧭 Easy navigation between pages
-* 📂 Well-organized project structure
+## ✨ Key Features & Pages
 
-## 🛠️ Technologies Used
+| Page | File | Description | Dedicated CSS |
+| :--- | :--- | :--- | :--- |
+| **Home** | `index.html` | Hero section, 3D floating achievement cards, statistics, "Why EduLearn?" feature grid, popular courses, and CTA banner. | `css/index.css` |
+| **Courses** | `course.html` | Comprehensive course catalog with search bar, category pill filters, and 9 responsive course cards. | `css/course.css` |
+| **Course Details** | `course-details.html` | Breadcrumbs, video preview mockup, 6-module curriculum breakdown, instructor bio, student reviews, and sticky enrollment card. | `css/course-details.css` |
+| **About Us** | `about.html` | Company story, mission & vision comparative cards, key features, stats strip, and instructor/leadership profiles. | `css/about.css` |
+| **Contact Us** | `contact.html` | Direct contact cards (Email, Phone, Campus Address, Hours), validated HTML5 inquiry form, and location badge. | `css/contact.css` |
+| **Login** | `login.html` | Modern centered authentication card, Google/GitHub social login, remember me, and password recovery. | `css/login.css` |
+| **Register** | `register.html` | Student sign-up with full name, email, phone, password confirmation, and terms agreement validation. | `css/register.css` |
+| **Student Dashboard** | `student.html` | Personal student portal with 4 metric cards, course completion progress bars (75%, 40%, 100%), activity timeline, and certificate downloads. | `css/student.css` |
+| **Privacy Policy** | `privacy.html` | Formal policy documentation with sticky sidebar table of contents and security clauses. | `css/privacy.css` |
+| **Refund Policy** | `refund.html` | 30-day money-back guarantee overview, 4-step visual refund process, and support ticket integration. | `css/refund.css` |
 
-* **HTML5** – Website structure and content
-* **CSS3** – Styling, layouts, animations, and responsive design
-* **JavaScript** – Interactive functionality
-* **Git & GitHub** – Version control and project hosting
-* **GitHub Pages** – Website deployment
+---
 
-## 📁 Project Structure
+## 🎨 Design System & Color Palette
+
+* **Primary Dark / Navy:** `#0f172a`, `#1e293b`, `#0d0225`
+* **Brand Accents / Gradients:** `#2563eb` (Blue), `#4f46e5` (Indigo), `#7c3aed` (Purple), `#06b6d4` (Cyan)
+* **Backgrounds:** Clean neutral `#f8fafc` & `#ffffff` with warm subtle hero gradients
+* **Typography:** [Google Fonts](https://fonts.google.com/) — `Poppins` (Bold headings) & `Inter` (Readable body text)
+* **Icons:** [Font Awesome 6](https://fontawesome.com/) via CDN for crisp modern iconography
+
+---
+
+## 📁 Project File Structure
 
 ```text
 EduLearn/
 │
-├── index.html
-├── about.html
-├── contact.html
-├── course.html
-├── course-details.html
-├── login.html
-├── register.html
-├── student.html
-├── privacy.html
-├── refund.html
-│
 ├── css/
-│   └── style.css
+│   ├── index.css            # Homepage styles & floating animations
+│   ├── about.css            # About page, mission/vision & team
+│   ├── contact.css          # Contact info cards & form styles
+│   ├── course.css           # Catalog grid, filter pills & search
+│   ├── course-details.css   # Curriculum, instructor & sticky enroll card
+│   ├── login.css            # Centered student login card
+│   ├── register.css         # Student registration form card
+│   ├── student.css          # Student portal, progress bars & metrics
+│   ├── privacy.css          # Privacy documentation & sidebar nav
+│   ├── refund.css           # 30-Day guarantee & 4-step process
+│   └── footer.css           # Common responsive 4-column footer
 │
 ├── utils/
-│   └── ...
+│   ├── header.html          # Modular header reference snippet
+│   └── Footer.html          # Modular footer reference snippet
 │
-└── README.md
-
-
+├── index.html               # Main Landing Page
+├── about.html               # About EduLearn Page
+├── contact.html             # Contact Us Page
+├── course.html              # Course Listing Page
+├── course-details.html      # Course Details & Syllabus Page
+├── login.html               # Student Sign In
+├── register.html            # Student Sign Up
+├── student.html             # Student Dashboard & Certificates
+├── privacy.html             # Privacy Policy Document
+├── refund.html              # 30-Day Refund Policy
+└── README.md                # Project Documentation
 ```
-
-
-
-## 🚀 Getting Started
-
-To run the project locally:
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/amreeshsharma/EduLearn-.git
-```
-
-### 2. Open the project
-
-Navigate to the project folder:
-
-```bash
-cd EduLearn-
-```
-
-### 3. Run the website
-
-Open:
-
-```text
-index.html
-```
-
-in your browser.
-
-You can also use **VS Code with Live Server** for a better development experience.
-
-## 🌐 Live Demo
-
-**EduLearn – Live Website**
-
-```text
-https://amreeshsharma.github.io/EduLearn-/
-```
-
-## 📱 Responsive Design
-
-EduLearn is designed to work across different screen sizes, including:
-
-* 💻 Desktop
-* 💻 Laptop
-* 📱 Mobile
-* 📲 Tablet
-
-Responsive layouts are implemented using CSS techniques such as:
-
-* Media Queries
-* Flexbox
-* CSS Grid
-* Relative Units
-* Responsive Typography
-
-## 🎯 Project Goals
-
-The main goals of EduLearn are:
-
-1. Create a clean and professional educational website.
-2. Provide simple navigation for students.
-3. Build reusable and organized frontend components.
-4. Practice responsive web design.
-5. Improve HTML and CSS development skills.
-6. Create a project suitable for a professional portfolio.
-
-## 🔮 Future Improvements
-
-Some features that can be added in future versions:
-
-* 🔑 Complete user authentication
-* 🗄️ Backend and database integration
-* 👨‍🏫 Instructor dashboard
-* 📊 Student progress tracking
-* 📝 Online quizzes and assignments
-* 🏆 Certificates and achievements
-* 🔔 Notifications
-* 💬 Student–instructor communication
-* 🤖 AI-powered learning assistant
-* 💳 Online course payment system
-
-## 📸 Screenshots
-
-Screenshots of the EduLearn interface can be added here to showcase the main pages of the project.
-
-```text
-Add screenshots of:
-• Home Page
-• Courses Page
-• Course Details
-• Login/Register
-• Student Dashboard
-```
-
-## 📚 What I Learned
-
-While developing EduLearn, I worked on:
-
-* Structuring multi-page websites using HTML5
-* Creating modern layouts using CSS3
-* Building responsive interfaces
-* Working with Flexbox and CSS Grid
-* Creating navigation between multiple pages
-* Organizing frontend project files
-* Using Git and GitHub for version control
-* Deploying a static website using GitHub Pages
-
-## 👨‍💻 Author
-
-**Amreesh Sharma**
-
-B.Tech – Computer Science & Engineering
-ITM University, Gwalior
-
-### 🔗 GitHub
-
-https://github.com/amreeshsharma
-
-## 📄 License
-
-This project is created for **educational and portfolio purposes**.
-
-You are welcome to explore and learn from the project.
 
 ---
 
-⭐ If you find this project useful, consider giving the repository a star!
-Thank you for exploring me 
+## 🚀 How to Run Locally
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/amreeshsharma/EduLearn-.git
+cd EduLearn-
+```
+
+### 2. Launch in VS Code
+Open the project directory in VS Code:
+```bash
+code .
+```
+
+### 3. Open with Live Server
+* Right-click on `index.html` and select **"Open with Live Server"**.
+* Alternatively, simply double-click `index.html` to open it in any web browser (Chrome, Edge, Firefox, Safari).
+
+---
+
+## 📱 Responsive Breakpoints Tested
+
+* 💻 **Desktop Large:** 1920px+
+* 💻 **Standard Desktop / Laptop:** 1366px / 1200px
+* 💻 **Tablet Landscape / Small Laptop:** 992px – 1024px
+* 📲 **Tablet Portrait:** 768px
+* 📱 **Mobile Landscape:** 576px – 640px
+* 📱 **Mobile Portrait:** 480px / 375px
+* 📱 **Small Mobile:** 320px
+
+---
+
+## 👨‍💻 Author
+
+**Amreesh Sharma**  
+B.Tech — Computer Science & Engineering  
+ITM University, Gwalior  
+
+* **GitHub:** [@amreeshsharma](https://github.com/amreeshsharma)
+
+---
+
+## 📄 License & Presentation Note
+
+This project is created for **academic and portfolio demonstration purposes**.  
+All links, cards, forms, and responsive CSS stylesheets are self-contained with no external CSS framework dependencies.
 
 **EduLearn — Learn. Grow. Succeed. 🎓**

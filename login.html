@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EduLearn | Learn. Grow. Succeed.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <!-- Header Logo -->
+    <header class="auth-header">
+        <a href="index.html" class="auth-logo">
+            <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+        </a>
+    </header>
+
+    <!-- Main Auth Card Container -->
+    <main class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-title">
+                <h1>Welcome Back!</h1>
+                <p>Sign in to your EduLearn student account</p>
+            </div>
+
+            <!-- Social Login Grid -->
+            <div class="social-login-grid">
+                <button type="button" class="social-btn google" onclick="window.location.href='student.html'">
+                    <i class="fa-brands fa-google"></i> Google
+                </button>
+                <button type="button" class="social-btn github" onclick="window.location.href='student.html'">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </button>
+            </div>
+
+            <div class="auth-divider">
+                <span>or continue with email</span>
+            </div>
+
+            <!-- Login Form -->
+            <form action="student.html" method="GET" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember" checked>
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-pass" onclick="alert('Password reset link sent to your registered email!'); return false;">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="auth-btn">
+                    <i class="fa-solid fa-right-to-bracket"></i> Login to Dashboard
+                </button>
+            </form>
+
+            <div class="auth-footer-links">
+                <p>Don't have an account? <a href="register.html">Create Free Account</a></p>
+                <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Homepage</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simple Auth Footer -->
+    <footer class="auth-page-footer">
+        <p>&copy; 2026 EduLearn. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="refund.html">Refund Policy</a></p>
+    </footer>
+
+</body>
+</html>

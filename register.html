@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - EduLearn | Learn. Grow. Succeed.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+    <!-- Header Logo -->
+    <header class="auth-header">
+        <a href="index.html" class="auth-logo">
+            <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+        </a>
+    </header>
+
+    <!-- Main Registration Container -->
+    <main class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-title">
+                <h1>Create Your Account</h1>
+                <p>Join thousands of students learning practical tech skills</p>
+            </div>
+
+            <!-- Social Sign Up -->
+            <div class="social-login-grid">
+                <button type="button" class="social-btn google" onclick="window.location.href='student.html'">
+                    <i class="fa-brands fa-google"></i> Google
+                </button>
+                <button type="button" class="social-btn github" onclick="window.location.href='student.html'">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </button>
+            </div>
+
+            <div class="auth-divider">
+                <span>or sign up with email</span>
+            </div>
+
+            <!-- Register Form -->
+            <form action="student.html" method="GET" class="auth-form" onsubmit="return true;">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Amreesh Sharma" required>
+                    </div>
+                </div>
+
+                <!-- Email & Phone in row -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="regEmail">Email Address</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="regEmail" name="email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPhone">Phone Number</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" id="regPhone" name="phone" class="form-control" placeholder="+91 98765 43210" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Password & Confirm Password in row -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="regPassword" name="password" class="form-control" placeholder="••••••••" minlength="6" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="••••••••" minlength="6" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms & Conditions Checkbox -->
+                <label class="terms-agreement">
+                    <input type="checkbox" name="terms" required>
+                    <span>I agree to EduLearn's <a href="privacy.html" target="_blank">Terms of Service</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>.</span>
+                </label>
+
+                <!-- Submit Button -->
+                <button type="submit" class="auth-btn">
+                    <i class="fa-solid fa-user-plus"></i> Create Free Account
+                </button>
+            </form>
+
+            <div class="auth-footer-links">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+                <a href="index.html" class="back-home"><i class="fa-solid fa-arrow-left"></i> Back to Homepage</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Simple Auth Footer -->
+    <footer class="auth-page-footer">
+        <p>&copy; 2026 EduLearn. All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="refund.html">Refund Policy</a></p>
+    </footer>
+
+</body>
+</html>

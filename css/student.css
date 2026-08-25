@@ -1,0 +1,674 @@
+/* ==========================================================================
+   EDULEARN - STUDENT DASHBOARD STYLESHEET (css/student.css)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #eef2ff;
+    --secondary: #7c3aed;
+    --accent: #2563eb;
+    --dark: #0f172a;
+    --dark-alt: #1e293b;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --card-border: #e2e8f0;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+    --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 35px -5px rgba(15, 23, 42, 0.15);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar {
+    background: linear-gradient(135deg, #0d0225 0%, #1e1b4b 100%);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.5px;
+}
+
+.logo i {
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.logo span {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 0;
+    position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #a5b4fc;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.user-profile-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar-badge {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.user-role {
+    font-size: 11.5px;
+    color: #a5b4fc;
+}
+
+.logout-link {
+    color: #cbd5e1;
+    font-size: 13.5px;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.logout-link:hover {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+}
+
+.nav-toggle-checkbox {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--white);
+    padding: 6px;
+}
+
+/* ==========================================================================
+   DASHBOARD HERO / WELCOME BANNER
+   ========================================================================== */
+.dashboard-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #31104b 100%);
+    color: var(--white);
+    padding: 50px 0 65px;
+}
+
+.welcome-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.welcome-text h1 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.welcome-text p {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+.welcome-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-dash-primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    font-size: 14.5px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.35);
+}
+
+.btn-dash-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.5);
+    color: var(--white);
+}
+
+.btn-dash-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 14.5px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-dash-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+/* ==========================================================================
+   STATISTICS METRICS CARDS
+   ========================================================================== */
+.stats-section {
+    margin-top: -35px;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.metric-card {
+    background: var(--white);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: var(--transition);
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: #c7d2fe;
+}
+
+.metric-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.metric-icon.blue {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.metric-icon.purple {
+    background: #f3e8ff;
+    color: #9333ea;
+}
+
+.metric-icon.green {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.metric-icon.orange {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.metric-data h3 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--dark);
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.metric-data p {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   DASHBOARD MAIN LAYOUT (MY COURSES & SIDEBAR)
+   ========================================================================== */
+.dashboard-main {
+    padding-bottom: 90px;
+}
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.section-box {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--card-border);
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow-sm);
+}
+
+.box-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-title span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-title i {
+    color: var(--primary);
+}
+
+/* Enrolled Course Cards */
+.enrolled-courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.course-progress-card {
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-sm);
+    padding: 22px;
+    background: #f8fafc;
+    transition: var(--transition);
+}
+
+.course-progress-card:hover {
+    background: var(--white);
+    border-color: #c7d2fe;
+    box-shadow: var(--shadow-md);
+}
+
+.cp-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.cp-title h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.cp-title p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.cp-badge {
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+}
+
+.cp-badge.in-progress {
+    background: #e0e7ff;
+    color: var(--primary);
+}
+
+.cp-badge.completed {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+/* Progress Bar */
+.progress-bar-wrapper {
+    margin: 15px 0;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.progress-track {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-full);
+}
+
+.progress-fill.full {
+    background: #10b981;
+}
+
+.cp-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 14px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.cp-lessons {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.continue-btn {
+    background: var(--primary);
+    color: var(--white);
+    padding: 7px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.continue-btn:hover {
+    background: var(--primary-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.continue-btn.btn-outline {
+    background: #f1f5f9;
+    color: var(--dark);
+    border: 1px solid #cbd5e1;
+}
+
+.continue-btn.btn-outline:hover {
+    background: #e2e8f0;
+}
+
+/* Timeline Activity */
+.activity-timeline {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.activity-timeline::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 8px;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    position: relative;
+    font-size: 13.5px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -24px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 2px solid var(--white);
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
+.timeline-content strong {
+    display: block;
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.timeline-content span {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+/* Certificates Widget */
+.certificates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.cert-card {
+    background: #f8fafc;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.cert-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #fef3c7;
+    color: #d97706;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.cert-info {
+    flex-grow: 1;
+}
+
+.cert-info h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 2px;
+}
+
+.cert-info small {
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.cert-download-btn {
+    color: var(--primary);
+    font-size: 14px;
+    padding: 6px;
+}
+
+.cert-download-btn:hover {
+    color: var(--secondary);
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dash-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 868px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: #0d0225;
+        flex-direction: column;
+        padding: 25px 0;
+        gap: 18px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .dashboard-hero h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-box {
+        padding: 20px 16px;
+    }
+
+    .welcome-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .btn-dash-primary,
+    .btn-dash-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,325 @@
+/* ==========================================================================
+   EDULEARN - REGISTER PAGE STYLESHEET (css/register.css)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --primary-light: #eef2ff;
+    --secondary: #7c3aed;
+    --accent: #2563eb;
+    --dark: #0f172a;
+    --dark-alt: #1e293b;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --card-border: #e2e8f0;
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+    --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', sans-serif;
+    color: var(--text-main);
+    background: linear-gradient(135deg, #0d0225 0%, #1e1b4b 60%, #31104b 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+.auth-header {
+    padding: 24px 0;
+    text-align: center;
+}
+
+.auth-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.auth-logo i {
+    color: #a5b4fc;
+}
+
+.auth-logo span {
+    color: #a5b4fc;
+}
+
+.auth-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.auth-card {
+    background: var(--white);
+    width: 100%;
+    max-width: 520px;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.auth-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-title h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--dark);
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+}
+
+.auth-title p {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* Social Buttons */
+.social-login-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border: 1.5px solid var(--card-border);
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--dark);
+    background: var(--white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.social-btn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+
+.social-btn.google i {
+    color: #ea4335;
+}
+
+.social-btn.github i {
+    color: #24292e;
+}
+
+/* Auth Divider */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.auth-divider span {
+    padding: 0 12px;
+}
+
+/* Form Styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 14px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px 14px 11px 40px;
+    border: 1.5px solid var(--card-border);
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    font-family: inherit;
+    color: var(--dark);
+    background: #f8fafc;
+    transition: var(--transition);
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+    background: var(--white);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+.terms-agreement {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+.terms-agreement input {
+    margin-top: 3px;
+    accent-color: var(--primary);
+}
+
+.terms-agreement a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.terms-agreement a:hover {
+    text-decoration: underline;
+}
+
+.auth-btn {
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    border: none;
+    padding: 13px;
+    border-radius: var(--radius-sm);
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(79, 70, 229, 0.3);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.45);
+    filter: brightness(1.08);
+}
+
+.auth-footer-links {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 13.5px;
+    color: var(--text-muted);
+}
+
+.auth-footer-links a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.auth-footer-links a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.back-home:hover {
+    color: var(--dark);
+}
+
+.auth-page-footer {
+    text-align: center;
+    padding: 18px 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+}
+
+.auth-page-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 8px;
+}
+
+@media (max-width: 540px) {
+    .auth-card {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

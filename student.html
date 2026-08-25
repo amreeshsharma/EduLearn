@@ -3,9 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Student Dashboard - EduLearn | Learn. Grow. Succeed.</title>
 
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/student.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
+<body>
 
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="course.html">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="student.html" class="active">Dashboard</a>
+            </nav>
+
+            <div class="user-profile-nav">
+                <div class="user-avatar-badge">AS</div>
+                <div class="user-info-text">
+                    <span class="user-name">Amreesh Sharma</span>
+                    <span class="user-role">Student</span>
+                </div>
+                <a href="login.html" class="logout-link" title="Logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= DASHBOARD HERO ================= -->
+        <section class="dashboard-hero">
+            <div class="container">
+                <div class="welcome-row">
+                    <div class="welcome-text">
+                        <h1>Welcome Back, Amreesh! 👋</h1>
+                        <p>Keep up the great work! You have completed 75% of your Web Development course.</p>
+                    </div>
+                    <div class="welcome-actions">
+                        <a href="course-details.html" class="btn-dash-primary">
+                            <i class="fa-solid fa-play"></i> Resume Learning
+                        </a>
+                        <a href="course.html" class="btn-dash-secondary">
+                            <i class="fa-solid fa-magnifying-glass"></i> Explore Courses
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= STATISTICS METRICS ================= -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <!-- Stat 1 -->
+                    <div class="metric-card">
+                        <div class="metric-icon blue">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="metric-data">
+                            <h3>4</h3>
+                            <p>Enrolled Courses</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="metric-card">
+                        <div class="metric-icon green">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="metric-data">
+                            <h3>2</h3>
+                            <p>Completed Courses</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="metric-card">
+                        <div class="metric-icon purple">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div class="metric-data">
+                            <h3>2</h3>
+                            <p>Certificates Earned</p>
+                        </div>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="metric-card">
+                        <div class="metric-icon orange">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="metric-data">
+                            <h3>48.5h</h3>
+                            <p>Learning Hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MAIN DASHBOARD CONTENT ================= -->
+        <section class="dashboard-main">
+            <div class="container">
+                <div class="dash-grid">
+
+                    <!-- Left Column: My Courses -->
+                    <div class="dash-main-col">
+                        <div class="section-box">
+                            <div class="box-title">
+                                <span><i class="fa-solid fa-graduation-cap"></i> My Enrolled Courses</span>
+                                <a href="course.html" style="font-size: 13px; color: var(--primary); font-weight: 600;">+ Browse More</a>
+                            </div>
+
+                            <div class="enrolled-courses-list">
+                                <!-- Course 1 (75%) -->
+                                <div class="course-progress-card">
+                                    <div class="cp-top">
+                                        <div class="cp-title">
+                                            <h4>Complete Web Development</h4>
+                                            <p>Instructor: Dr. Rajesh Sharma</p>
+                                        </div>
+                                        <span class="cp-badge in-progress">In Progress</span>
+                                    </div>
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-info">
+                                            <span>Progress</span>
+                                            <span>75% Completed</span>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" style="width: 75%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cp-bottom">
+                                        <span class="cp-lessons"><i class="fa-solid fa-play-circle"></i> 18 of 24 Lessons Done</span>
+                                        <a href="course-details.html" class="continue-btn">
+                                            Continue <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Course 2 (40%) -->
+                                <div class="course-progress-card">
+                                    <div class="cp-top">
+                                        <div class="cp-title">
+                                            <h4>Java Programming Masterclass</h4>
+                                            <p>Instructor: Neha Verma</p>
+                                        </div>
+                                        <span class="cp-badge in-progress">In Progress</span>
+                                    </div>
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-info">
+                                            <span>Progress</span>
+                                            <span>40% Completed</span>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" style="width: 40%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cp-bottom">
+                                        <span class="cp-lessons"><i class="fa-solid fa-play-circle"></i> 12 of 30 Lessons Done</span>
+                                        <a href="course-details.html" class="continue-btn">
+                                            Continue <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Course 3 (100% Completed) -->
+                                <div class="course-progress-card">
+                                    <div class="cp-top">
+                                        <div class="cp-title">
+                                            <h4>SQL &amp; Database Management</h4>
+                                            <p>Instructor: Siddharth Rao</p>
+                                        </div>
+                                        <span class="cp-badge completed"><i class="fa-solid fa-check"></i> Completed</span>
+                                    </div>
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-info">
+                                            <span>Progress</span>
+                                            <span style="color: #16a34a;">100% Completed</span>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill full" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cp-bottom">
+                                        <span class="cp-lessons"><i class="fa-solid fa-circle-check" style="color: #16a34a;"></i> 20 of 20 Lessons Done</span>
+                                        <a href="#certificates" class="continue-btn btn-outline">
+                                            <i class="fa-solid fa-award"></i> Certificate
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Course 4 (15%) -->
+                                <div class="course-progress-card">
+                                    <div class="cp-top">
+                                        <div class="cp-title">
+                                            <h4>Python for Beginners &amp; Data Science</h4>
+                                            <p>Instructor: Dr. Rajesh Sharma</p>
+                                        </div>
+                                        <span class="cp-badge in-progress">In Progress</span>
+                                    </div>
+                                    <div class="progress-bar-wrapper">
+                                        <div class="progress-info">
+                                            <span>Progress</span>
+                                            <span>15% Completed</span>
+                                        </div>
+                                        <div class="progress-track">
+                                            <div class="progress-fill" style="width: 15%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cp-bottom">
+                                        <span class="cp-lessons"><i class="fa-solid fa-play-circle"></i> 4 of 28 Lessons Done</span>
+                                        <a href="course-details.html" class="continue-btn">
+                                            Continue <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Sidebar Widgets -->
+                    <div class="dash-side-col">
+
+                        <!-- Recent Activity Widget -->
+                        <div class="section-box">
+                            <div class="box-title">
+                                <span><i class="fa-solid fa-clock-rotate-left"></i> Recent Activity</span>
+                            </div>
+                            <ul class="activity-timeline">
+                                <li class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-content">
+                                        <strong>Completed Lesson: CSS Grid Areas</strong>
+                                        <span>2 hours ago</span>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-dot" style="background: #10b981;"></div>
+                                    <div class="timeline-content">
+                                        <strong>Passed Quiz: HTML5 Forms (Score: 95%)</strong>
+                                        <span>Yesterday</span>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-dot" style="background: #f59e0b;"></div>
+                                    <div class="timeline-content">
+                                        <strong>Earned Certificate: SQL &amp; Databases</strong>
+                                        <span>3 days ago</span>
+                                    </div>
+                                </li>
+                                <li class="timeline-item">
+                                    <div class="timeline-dot" style="background: #0284c7;"></div>
+                                    <div class="timeline-content">
+                                        <strong>Enrolled in Python for Beginners</strong>
+                                        <span>5 days ago</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- My Certificates Widget -->
+                        <div class="section-box" id="certificates">
+                            <div class="box-title">
+                                <span><i class="fa-solid fa-award"></i> My Certificates</span>
+                            </div>
+                            <div class="certificates-list">
+                                <div class="cert-card">
+                                    <div class="cert-icon">
+                                        <i class="fa-solid fa-file-shield"></i>
+                                    </div>
+                                    <div class="cert-info">
+                                        <h5>SQL &amp; Database Mastery</h5>
+                                        <small>Issued: Aug 2026 • ID: ED-94821</small>
+                                    </div>
+                                    <a href="#" class="cert-download-btn" title="Download Certificate" onclick="alert('Downloading verified PDF certificate for SQL & Database Mastery!'); return false;">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-icon">
+                                        <i class="fa-solid fa-file-shield"></i>
+                                    </div>
+                                    <div class="cert-info">
+                                        <h5>Web Design Fundamentals</h5>
+                                        <small>Issued: Jul 2026 • ID: ED-83194</small>
+                                    </div>
+                                    <a href="#" class="cert-download-btn" title="Download Certificate" onclick="alert('Downloading verified PDF certificate for Web Design Fundamentals!'); return false;">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+                    </a>
+                    <p>
+                        Simple and effective learning platform for everyone. Master modern technologies with structured courses.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Learn</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="course.html"><i class="fa-solid fa-angle-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="login.html"><i class="fa-solid fa-angle-right"></i> Student Login</a></li>
+                        <li><a href="register.html"><i class="fa-solid fa-angle-right"></i> Register Account</a></li>
+                        <li><a href="student.html"><i class="fa-solid fa-angle-right"></i> Student Dashboard</a></li>
+                        <li><a href="refund.html"><i class="fa-solid fa-angle-right"></i> Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Terms of Service</a></li>
+                        <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+                        <li><a href="refund.html"><i class="fa-solid fa-angle-right"></i> Refund Guidelines</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="bottom-footer">
+                <p>&copy; 2026 EduLearn. All rights reserved. Learn. Grow. Succeed.</p>
+                <div class="bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="privacy.html">Terms</a>
+                    <a href="refund.html">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
