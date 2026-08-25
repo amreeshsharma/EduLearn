@@ -1,127 +1,224 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ==========================================================================
+   EDULEARN - COMMON FOOTER STYLESHEET (css/footer.css)
+   ========================================================================== */
+
+:root {
+    --primary-dark: #0f172a;
+    --secondary-dark: #1e293b;
+    --navy-blue: #0d0225;
+    --accent-blue: #2563eb;
+    --accent-indigo: #4f46e5;
+    --accent-purple: #7c3aed;
+    --text-white: #ffffff;
+    --text-light: #cbd5e1;
+    --text-muted: #94a3b8;
+    --border-dark: #334155;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding-top: 70px;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
     font-family: 'Poppins', sans-serif;
 }
 
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .top-footer {
-    
-    background-color: #0f172a;
-    color: aliceblue;
-    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
-
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 50px;
 }
 
-.bottom-footer {
-    background-color: #0f172a;
-    color: aliceblue;
-    text-align: center;
-    padding: 10px;
-}
-
-.item1 {
-    font-size: 10px;
-
-}
-
-.lists {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(235, 238, 241);
-}
-
-a:hover {
-    color: rgb(106, 80, 234);
-}
-
-li {
-    list-style: none;
-}
-
-p {
-    font-size: 14px;
-    color: rgb(200, 220, 239);
-}
-
-h2 {
-    font-size: 20px;
-    color: rgb(235, 238, 241);
+.footer-brand .footer-logo {
+    display: inline-block;
+    font-size: 26px;
     font-weight: 800;
+    color: var(--text-white);
+    margin-bottom: 15px;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.footer-brand .footer-logo span {
+    color: var(--accent-indigo);
+}
+
+.footer-brand p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+    max-width: 320px;
+}
+
+.footer-col h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: 20px;
+    position: relative;
+    letter-spacing: 0.2px;
+}
+
+.footer-col h3::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background: var(--accent-indigo);
+    border-radius: 2px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links li a {
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-links li a:hover {
+    color: var(--text-white);
+    transform: translateX(4px);
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
 }
 
-
-.social-icons a {
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    width: 45px;
-    height: 45px;
+.social-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    transition: var(--transition);
 }
 
-ul {
+.social-icon:hover {
+    transform: translateY(-4px);
+    color: var(--text-white);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon.facebook:hover {
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+.social-icon.twitter:hover {
+    background: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.social-icon.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    border-color: transparent;
+}
+
+.social-icon.linkedin:hover {
+    background: #0a66c2;
+    border-color: #0a66c2;
+}
+
+.social-icon.youtube:hover {
+    background: #ff0000;
+    border-color: #ff0000;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 0;
+}
+
+.bottom-footer {
+    padding: 24px 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-.facebook{
-    height: 30px;
-    width: 30px;
-    background-color:rgb(20, 41, 230);
-
-}
-.twitter{
-    height: 30px;
-    width: 30px;
-    background-color:rgb(29, 161, 242);
-
-}
-.instagram{
-    height: 30px;
-    width: 30px;
-background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #bc3081 50%, #5c3cb4 75%);
-}
-.linkedin{
-    height: 30px;
-    width: 30px;
-    background-color:rgb(30, 10, 180);
-
-}
-.youtube{
-    height: 30px;
-    width: 30px;
-    background-color:rgb(199, 7, 7);
-
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13.5px;
+    color: var(--text-muted);
 }
 
-i {
-    color: white;
-
+.bottom-footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition);
 }
-@media(max-width:360px){
-    .top-footer{
+
+.bottom-footer a:hover {
+    color: var(--text-white);
+}
+
+.bottom-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* ==========================================================================
+   FOOTER RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .top-footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding-top: 50px;
+    }
+
+    .top-footer {
         grid-template-columns: 1fr;
+        gap: 32px;
     }
-    .social-icons{
-        justify-content: space-evenly;
+
+    .bottom-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .bottom-links {
+        justify-content: center;
     }
 }
-

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduLearn | Learn. Grow. Succeed.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="course.html" class="active">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= PAGE BANNER ================= -->
+        <section class="page-banner">
+            <div class="container">
+                <span class="banner-badge">
+                    <i class="fa-solid fa-graduation-cap"></i> Complete Catalog
+                </span>
+                <h1>Explore Our Courses</h1>
+                <p>
+                    Discover practical, industry-aligned tech courses designed by engineering leaders to take your career to the next level.
+                </p>
+
+                <!-- Search Input -->
+                <div class="course-search-wrapper">
+                    <form class="search-box" action="#" method="GET" onsubmit="return false;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for courses (e.g. Java, Python, Web Dev)..." aria-label="Search courses">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CATEGORY FILTER PILLS ================= -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-pills">
+                    <a href="course.html" class="filter-pill active"><i class="fa-solid fa-layer-group"></i> All Courses</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-solid fa-code"></i> Web Development</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-brands fa-java"></i> Java</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-brands fa-python"></i> Python</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-solid fa-database"></i> Database</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-solid fa-diagram-project"></i> Data Structures</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-brands fa-react"></i> Frontend</a>
+                    <a href="course.html" class="filter-pill"><i class="fa-solid fa-terminal"></i> C++</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= COURSES CATALOG ================= -->
+        <section class="courses-catalog">
+            <div class="container">
+                <div class="catalog-info-bar">
+                    <span>Showing <strong>9</strong> curated courses</span>
+                    <span>Sorted by: <strong>Most Popular</strong></span>
+                </div>
+
+                <div class="course-grid">
+                    <!-- Course Card 1 -->
+                    <div class="course-card">
+                        <div class="course-image web">
+                            <span><i class="fa-solid fa-code"></i> WEB DEVELOPMENT</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Beginner</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9 (1.2k)
+                                </div>
+                            </div>
+                            <h3>Complete Web Development</h3>
+                            <p>
+                                HTML5, CSS3, Flexbox, Grid, and responsive web design essentials with practical projects.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 24 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 8 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹499</strong>
+                                    <del>₹1,999</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2 -->
+                    <div class="course-card">
+                        <div class="course-image java">
+                            <span><i class="fa-brands fa-java"></i> PROGRAMMING</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Beginner</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.8 (950)
+                                </div>
+                            </div>
+                            <h3>Java Programming Masterclass</h3>
+                            <p>
+                                From basic syntax to Object-Oriented Programming, Collections, Exception Handling, and streams.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 30 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 12 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹699</strong>
+                                    <del>₹2,499</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 3 -->
+                    <div class="course-card">
+                        <div class="course-image db">
+                            <span><i class="fa-solid fa-database"></i> DATABASE</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Intermediate</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9 (820)
+                                </div>
+                            </div>
+                            <h3>SQL & Database Management</h3>
+                            <p>
+                                Relational modeling, schema design, subqueries, indexing, performance tuning, and MySQL.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 20 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 7 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹599</strong>
+                                    <del>₹1,899</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 4 -->
+                    <div class="course-card">
+                        <div class="course-image python">
+                            <span><i class="fa-brands fa-python"></i> PYTHON</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Beginner</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9 (1.4k)
+                                </div>
+                            </div>
+                            <h3>Python for Beginners & Data</h3>
+                            <p>
+                                Learn modern Python 3, scripting, data automation, Pandas, NumPy, and basic data analysis.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 28 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 10 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹549</strong>
+                                    <del>₹2,199</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 5 -->
+                    <div class="course-card">
+                        <div class="course-image dsa">
+                            <span><i class="fa-solid fa-diagram-project"></i> DATA STRUCTURES</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Intermediate</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9 (1.8k)
+                                </div>
+                            </div>
+                            <h3>Data Structures & Algorithms in C++</h3>
+                            <p>
+                                Arrays, linked lists, trees, graphs, dynamic programming, and competitive problem solving.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 35 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 15 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹799</strong>
+                                    <del>₹2,999</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 6 -->
+                    <div class="course-card">
+                        <div class="course-image react">
+                            <span><i class="fa-brands fa-react"></i> FRONTEND</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Intermediate</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.8 (760)
+                                </div>
+                            </div>
+                            <h3>Modern Frontend & React</h3>
+                            <p>
+                                Component-driven architecture, state management, hooks, routing, and modern UI engineering.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 26 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 9 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹649</strong>
+                                    <del>₹2,299</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 7 -->
+                    <div class="course-card">
+                        <div class="course-image cpp">
+                            <span><i class="fa-solid fa-terminal"></i> C++</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Beginner</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.7 (610)
+                                </div>
+                            </div>
+                            <h3>Object-Oriented C++ Programming</h3>
+                            <p>
+                                Pointers, memory management, STL, templates, inheritance, and core low-level programming.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 22 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 8 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹499</strong>
+                                    <del>₹1,799</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 8 -->
+                    <div class="course-card">
+                        <div class="course-image backend">
+                            <span><i class="fa-solid fa-server"></i> BACKEND</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Advanced</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.9 (890)
+                                </div>
+                            </div>
+                            <h3>Backend Engineering & APIs</h3>
+                            <p>
+                                REST APIs, authentication (JWT/OAuth), microservices, caching with Redis, and system design.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 32 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 14 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹899</strong>
+                                    <del>₹3,499</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 9 -->
+                    <div class="course-card">
+                        <div class="course-image cloud">
+                            <span><i class="fa-solid fa-cloud"></i> CLOUD</span>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-badge-row">
+                                <span class="course-level">Intermediate</span>
+                                <div class="course-rating">
+                                    <i class="fa-solid fa-star"></i> 4.8 (530)
+                                </div>
+                            </div>
+                            <h3>Cloud & DevOps Essentials</h3>
+                            <p>
+                                Docker containerization, CI/CD deployment pipelines, Linux server administration, and AWS basics.
+                            </p>
+                            <div class="course-info">
+                                <span><i class="fa-solid fa-book"></i> 25 Lessons</span>
+                                <span><i class="fa-regular fa-clock"></i> 11 Hours</span>
+                            </div>
+                            <div class="course-bottom">
+                                <div class="course-price">
+                                    <strong>₹749</strong>
+                                    <del>₹2,699</del>
+                                </div>
+                                <a href="course-details.html" class="course-btn">
+                                    View Details <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+                    </a>
+                    <p>
+                        Simple and effective learning platform for everyone. Master modern technologies with structured courses.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Learn</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="course.html"><i class="fa-solid fa-angle-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="login.html"><i class="fa-solid fa-angle-right"></i> Student Login</a></li>
+                        <li><a href="register.html"><i class="fa-solid fa-angle-right"></i> Register Account</a></li>
+                        <li><a href="student.html"><i class="fa-solid fa-angle-right"></i> Student Dashboard</a></li>
+                        <li><a href="refund.html"><i class="fa-solid fa-angle-right"></i> Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Terms of Service</a></li>
+                        <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+                        <li><a href="refund.html"><i class="fa-solid fa-angle-right"></i> Refund Guidelines</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="bottom-footer">
+                <p>&copy; 2026 EduLearn. All rights reserved. Learn. Grow. Succeed.</p>
+                <div class="bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="privacy.html">Terms</a>
+                    <a href="refund.html">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

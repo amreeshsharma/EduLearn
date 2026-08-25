@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Web Development - Course Details | EduLearn</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/course-details.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="course.html" class="active">Courses</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+    <div class="breadcrumb-nav">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                <a href="course.html">Courses</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
+                <span class="current">Complete Web Development</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= COURSE HERO ================= -->
+    <section class="course-hero">
+        <div class="container">
+            <div class="course-hero-content">
+                <span class="badge-tag"><i class="fa-solid fa-code"></i> Web Development</span>
+                <h1>Complete Web Development: From Basics to Capstone</h1>
+                <p class="course-hero-lead">
+                    Master modern HTML5, CSS3, Flexbox, CSS Grid, responsive design principles, and build 5 real-world production projects step by step.
+                </p>
+
+                <div class="course-hero-meta">
+                    <div class="meta-item meta-rating">
+                        <i class="fa-solid fa-star"></i> 4.9 (1,250+ ratings)
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-user-group"></i> 10,400+ Students Enrolled
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-chalkboard-user"></i> Instructor: <strong>Dr. Rajesh Sharma</strong>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fa-solid fa-globe"></i> English &amp; Hindi
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= MAIN COURSE DETAILS & SIDEBAR ================= -->
+    <main class="course-details-section">
+        <div class="container">
+            <div class="details-grid">
+
+                <!-- Left Column: Comprehensive Content -->
+                <div class="main-details-col">
+
+                    <!-- What You Will Learn -->
+                    <div class="content-box">
+                        <h2><i class="fa-solid fa-circle-check"></i> What You Will Learn</h2>
+                        <div class="learn-grid">
+                            <div class="learn-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Build 5 responsive, modern, production-grade web projects from scratch.</span>
+                            </div>
+                            <div class="learn-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Master HTML5 semantic elements, metadata, and accessibility guidelines (a11y).</span>
+                            </div>
+                            <div class="learn-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Deep dive into CSS3 Flexbox and CSS Grid layout algorithms.</span>
+                            </div>
+                            <div class="learn-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Master mobile-first responsive design and cross-device media queries.</span>
+                            </div>
+                            <div class="learn-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Clean code architecture, custom CSS properties, and smooth animations.</span>
+                            </div>
+                            <div class="learn-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Version control with Git, GitHub hosting, and live web deployment.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Curriculum -->
+                    <div class="content-box">
+                        <h2><i class="fa-solid fa-list-check"></i> Course Curriculum</h2>
+                        <div class="curriculum-list">
+                            <!-- Module 1 -->
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <span>Module 1: Introduction to Web Architecture</span>
+                                    <span class="module-meta">4 Lessons • 45 Mins</span>
+                                </div>
+                                <ul class="module-lessons">
+                                    <li><span><i class="fa-solid fa-play"></i> How the Web and Browsers Work</span> <span>10:15</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Setting up VS Code &amp; Extensions</span> <span>08:40</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> HTML Document Structure &amp; Doctype</span> <span>12:20</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Working with Tags, Elements &amp; Attributes</span> <span>14:05</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Module 2 -->
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <span>Module 2: HTML5 Semantic Elements &amp; Forms</span>
+                                    <span class="module-meta">6 Lessons • 1.5 Hours</span>
+                                </div>
+                                <ul class="module-lessons">
+                                    <li><span><i class="fa-solid fa-play"></i> Semantic Tags (header, nav, main, section, footer)</span> <span>15:30</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Accessible Forms, Inputs &amp; Validation</span> <span>18:10</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Embedding Media (Images, Video, SVG, Audio)</span> <span>14:45</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Tables, Data Lists &amp; Entities</span> <span>12:50</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Module 3 -->
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <span>Module 3: Modern CSS3, Flexbox &amp; Grid</span>
+                                    <span class="module-meta">8 Lessons • 2.5 Hours</span>
+                                </div>
+                                <ul class="module-lessons">
+                                    <li><span><i class="fa-solid fa-play"></i> CSS Selectors, Specificity &amp; Box Model</span> <span>20:10</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Flexbox Fundamentals &amp; Alignment Systems</span> <span>25:40</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> CSS Grid: Rows, Columns &amp; Template Areas</span> <span>28:15</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> CSS Custom Variables &amp; Theming</span> <span>16:30</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Module 4 -->
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <span>Module 4: Responsive Design &amp; Mobile Optimization</span>
+                                    <span class="module-meta">5 Lessons • 1.5 Hours</span>
+                                </div>
+                                <ul class="module-lessons">
+                                    <li><span><i class="fa-solid fa-play"></i> Mobile-First Thinking &amp; Breakpoints</span> <span>18:20</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Media Queries &amp; Fluid Typography</span> <span>22:15</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Hamburger Menus &amp; Touch-Friendly UI</span> <span>19:40</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Module 5 -->
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <span>Module 5: Practical Hands-on Projects</span>
+                                    <span class="module-meta">6 Lessons • 2 Hours</span>
+                                </div>
+                                <ul class="module-lessons">
+                                    <li><span><i class="fa-solid fa-play"></i> Project 1: Personal Portfolio Website</span> <span>30:00</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Project 2: E-Commerce Product Landing Page</span> <span>35:20</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Project 3: Interactive Dashboard UI</span> <span>28:40</span></li>
+                                </ul>
+                            </div>
+
+                            <!-- Module 6 -->
+                            <div class="module-card">
+                                <div class="module-header">
+                                    <span>Module 6: Capstone Project, Git &amp; Live Deployment</span>
+                                    <span class="module-meta">3 Lessons • 1 Hour</span>
+                                </div>
+                                <ul class="module-lessons">
+                                    <li><span><i class="fa-solid fa-play"></i> Git &amp; GitHub Version Control</span> <span>20:15</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Deploying on GitHub Pages &amp; Vercel</span> <span>18:30</span></li>
+                                    <li><span><i class="fa-solid fa-play"></i> Final Capstone Review &amp; Certification</span> <span>15:00</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Benefits -->
+                    <div class="content-box">
+                        <h2><i class="fa-solid fa-gift"></i> Course Benefits &amp; Perks</h2>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <i class="fa-solid fa-certificate"></i>
+                                <div>
+                                    <strong>Verified Certificate</strong>
+                                    <small>Add verifiable credential to your LinkedIn &amp; Resume.</small>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fa-solid fa-infinity"></i>
+                                <div>
+                                    <strong>Lifetime Access</strong>
+                                    <small>Learn at your own pace with lifetime updates.</small>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <div>
+                                    <strong>Real Practical Projects</strong>
+                                    <small>Build 5 industry-ready portfolio projects.</small>
+                                </div>
+                            </div>
+                            <div class="benefit-card">
+                                <i class="fa-solid fa-comments"></i>
+                                <div>
+                                    <strong>Expert Guidance &amp; Q&amp;A</strong>
+                                    <small>Get your coding questions answered within 24 hours.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instructor Section -->
+                    <div class="content-box">
+                        <h2><i class="fa-solid fa-user-tie"></i> Your Instructor</h2>
+                        <div class="instructor-profile">
+                            <div class="instructor-avatar">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="instructor-info">
+                                <h3>Dr. Rajesh Sharma</h3>
+                                <p>Senior Frontend Architect &amp; Tech Educator</p>
+                                <div class="instructor-stats">
+                                    <span><i class="fa-solid fa-star" style="color: #f59e0b;"></i> 4.9 Instructor Rating</span>
+                                    <span><i class="fa-solid fa-user-graduate"></i> 25,000+ Students</span>
+                                    <span><i class="fa-solid fa-book"></i> 8 Courses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="instructor-bio">
+                            Dr. Rajesh Sharma has over 12 years of industry experience engineering high-scale frontend systems. He has trained thousands of engineering students and working professionals to successfully transition into software development careers.
+                        </p>
+                    </div>
+
+                    <!-- Student Reviews -->
+                    <div class="content-box">
+                        <h2><i class="fa-solid fa-star-half-stroke"></i> Student Reviews</h2>
+                        <div class="reviews-grid">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Amit Verma</span>
+                                    <span class="review-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <p>"This course made CSS Flexbox and Grid so simple to understand! The hands-on projects helped me build my college portfolio and land an internship."</p>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <span class="reviewer-name">Priya Patel</span>
+                                    <span class="review-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <p>"The curriculum is structured step-by-step. Everything works seamlessly without relying on confusing frameworks. Highly recommended for every beginner!"</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Sticky Enrollment Card -->
+                <div class="sidebar-col">
+                    <div class="sidebar-sticky-wrapper">
+                        <div class="enroll-card">
+                            <!-- Video Mockup Preview -->
+                            <div class="video-preview" onclick="alert('Course preview video player ready! Enroll now to unlock all 24 lessons.');">
+                                <div class="play-btn-circle">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <span>Preview Free Introduction</span>
+                            </div>
+
+                            <div class="enroll-card-body">
+                                <div class="price-box">
+                                    <span class="current-price">₹499</span>
+                                    <span class="old-price">₹1,999</span>
+                                    <span class="discount-badge">75% OFF</span>
+                                </div>
+                                <div class="urgency-text">
+                                    <i class="fa-solid fa-fire"></i> Limited time discount for new students!
+                                </div>
+
+                                <a href="register.html" class="enroll-now-btn">
+                                    Enroll Now <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                                <div class="money-back">
+                                    <i class="fa-solid fa-shield-halved"></i> 30-Day Money-Back Guarantee. <a href="refund.html">Learn more</a>
+                                </div>
+
+                                <div class="includes-title">This course includes:</div>
+                                <ul class="includes-list">
+                                    <li><i class="fa-solid fa-video"></i> 8 hours on-demand HD video</li>
+                                    <li><i class="fa-solid fa-book-open"></i> 24 comprehensive lessons</li>
+                                    <li><i class="fa-solid fa-file-arrow-down"></i> 12 downloadable cheat sheets &amp; code files</li>
+                                    <li><i class="fa-solid fa-mobile-screen"></i> Access on mobile, tablet &amp; desktop</li>
+                                    <li><i class="fa-solid fa-infinity"></i> Full lifetime access with updates</li>
+                                    <li><i class="fa-solid fa-certificate"></i> Certificate of completion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="top-footer">
+                <div class="footer-col footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-graduation-cap"></i> Edu<span>Learn</span>
+                    </a>
+                    <p>
+                        Simple and effective learning platform for everyone. Master modern technical skills with structured courses.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com" class="social-icon twitter" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com" class="social-icon instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Learn</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="course.html"><i class="fa-solid fa-angle-right"></i> Courses</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="login.html"><i class="fa-solid fa-angle-right"></i> Student Login</a></li>
+                        <li><a href="register.html"><i class="fa-solid fa-angle-right"></i> Register Account</a></li>
+                        <li><a href="student.html"><i class="fa-solid fa-angle-right"></i> Student Dashboard</a></li>
+                        <li><a href="refund.html"><i class="fa-solid fa-angle-right"></i> Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Terms of Service</a></li>
+                        <li><a href="privacy.html"><i class="fa-solid fa-angle-right"></i> Privacy Policy</a></li>
+                        <li><a href="refund.html"><i class="fa-solid fa-angle-right"></i> Refund Guidelines</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="bottom-footer">
+                <p>&copy; 2026 EduLearn. All rights reserved. Learn. Grow. Succeed.</p>
+                <div class="bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="privacy.html">Terms</a>
+                    <a href="refund.html">Refunds</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
