@@ -125,7 +125,7 @@ ITM University, Gwalior
 
 ## 📄 License & Presentation Note
 
-This project is created for **academic and portfolio demonstration purposes**.  
+This project is created for **academic and portfolio demonstration purposes**.  If you really liked it then please give a star to this repo.
 All links, cards, forms, and responsive CSS stylesheets are self-contained with no external CSS framework dependencies.
 
 **EduLearn — Learn. Grow. Succeed. 🎓**
