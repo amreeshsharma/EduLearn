@@ -42,7 +42,7 @@ Designed specifically as a high-standard web development showcase and college pr
 * **Typography:** [Google Fonts](https://fonts.google.com/) — `Poppins` (Bold headings) & `Inter` (Readable body text)
 * **Icons:** [Font Awesome 6](https://fontawesome.com/) via CDN for crisp modern iconography
 
----
+
 
 ## 📁 Project File Structure
 
