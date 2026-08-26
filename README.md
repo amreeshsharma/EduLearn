@@ -79,7 +79,7 @@ EduLearn/
 └── README.md                # Project Documentation
 ```
 
----
+
 
 ## 🚀 How to Run Locally
 
