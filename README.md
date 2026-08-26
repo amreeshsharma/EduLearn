@@ -32,7 +32,7 @@ Designed specifically as a high-standard web development showcase and college pr
 | **Privacy Policy** | `privacy.html` | Formal policy documentation with sticky sidebar table of contents and security clauses. | `css/privacy.css` |
 | **Refund Policy** | `refund.html` | 30-day money-back guarantee overview, 4-step visual refund process, and support ticket integration. | `css/refund.css` |
 
----
+
 
 ## 🎨 Design System & Color Palette
 
