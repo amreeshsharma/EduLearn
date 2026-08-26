@@ -111,7 +111,7 @@ code .
 * 📱 **Mobile Portrait:** 480px / 375px
 * 📱 **Small Mobile:** 320px
 
----
+
 
 ## 👨‍💻 Author
 
@@ -121,7 +121,6 @@ ITM University, Gwalior
 
 * **GitHub:** [@amreeshsharma](https://github.com/amreeshsharma)
 
----
 
 ## 📄 License & Presentation Note
 
