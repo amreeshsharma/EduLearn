@@ -1,4 +1,4 @@
-# 🎓 EduLearn — Modern Educational Web Platform
+ 🎓 EduLearn — Modern Educational Web Platform
 
 > **Tagline:** *"Learn. Grow. Succeed."*
 
@@ -16,8 +16,7 @@
 Designed specifically as a high-standard web development showcase and college presentation project, EduLearn provides students with an engaging platform to discover high-quality technical courses, view in-depth curricula, register securely, track learning progress, and explore legal and support services.
 
 
-
-## ✨ Key Features & Pages
+✨ Key Features & Pages
 
 | Page | File | Description | Dedicated CSS |
 | :--- | :--- | :--- | :--- |
