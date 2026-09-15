@@ -33,7 +33,7 @@ Designed specifically as a high-standard web development showcase and college pr
 
 
 
-## 🎨 Design System & Color Palette
+ 🎨 Design System & Color Palette
 
 * **Primary Dark / Navy:** `#0f172a`, `#1e293b`, `#0d0225`
 * **Brand Accents / Gradients:** `#2563eb` (Blue), `#4f46e5` (Indigo), `#7c3aed` (Purple), `#06b6d4` (Cyan)
@@ -43,7 +43,7 @@ Designed specifically as a high-standard web development showcase and college pr
 
 
 
-## 📁 Project File Structure
+📁 Project File Structure
 
 ```text
 EduLearn/
@@ -112,7 +112,7 @@ code .
 
 
 
-## 👨‍💻 Author
+ 👨‍💻 Author
 
 **Amreesh Sharma**  
 B.Tech — Computer Science & Engineering  
