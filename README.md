@@ -43,7 +43,7 @@ Designed specifically as a high-standard web development showcase and college pr
 
 
 
-📁 Project File Structure
+📁  Project File Structure
 
 ```text
 EduLearn/
