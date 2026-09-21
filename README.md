@@ -9,7 +9,7 @@
 
 
 
- 📌 Project Overview
+## 📌 Project Overview
 
 **EduLearn** is a professional, modern, and fully responsive e-learning website built using **pure semantic HTML5 and Vanilla CSS3**.
 
