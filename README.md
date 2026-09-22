@@ -1,4 +1,4 @@
-##🎓 EduLearn — Modern Educational Web Platform
+🎓 EduLearn — Modern Educational Web Platform
 
 > **Tagline:** *"Learn. Grow. Succeed."*
 
