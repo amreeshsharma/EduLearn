@@ -15,7 +15,7 @@
 Designed specifically as a high-standard web development showcase and college presentation project, EduLearn provides students with an engaging platform to discover high-quality technical courses, view in-depth curricula, register securely, track learning progress, and explore legal and support services.
 
 
-✨ Key Features & Pages
+##✨ Key Features & Pages
 
 | Page | File | Description | Dedicated CSS |
 | :--- | :--- | :--- | :--- |
@@ -32,7 +32,7 @@ Designed specifically as a high-standard web development showcase and college pr
 
 
 
- 🎨 Design System & Color Palette
+## 🎨 Design System & Color Palette
 
 * **Primary Dark / Navy:** `#0f172a`, `#1e293b`, `#0d0225`
 * **Brand Accents / Gradients:** `#2563eb` (Blue), `#4f46e5` (Indigo), `#7c3aed` (Purple), `#06b6d4` (Cyan)
@@ -42,7 +42,7 @@ Designed specifically as a high-standard web development showcase and college pr
 
 
 
-📁  Project File Structure
+##📁  Project File Structure
 
 ```text
 EduLearn/
