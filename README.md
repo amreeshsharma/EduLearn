@@ -8,7 +8,7 @@
 ![Responsive](https://img.shields.io/badge/Responsive_Design-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)
 
 
- ##📌 Project Overview
+ 📌 Project Overview
 
 **EduLearn** is a professional, modern, and fully responsive e-learning website built using **pure semantic HTML5 and Vanilla CSS3**.
 
