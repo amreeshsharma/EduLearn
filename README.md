@@ -10,7 +10,7 @@
 
  ## 📌 Project Overview
 
-** EduLearn** is a professional, modern, and fully responsive e-learning website built using **pure semantic HTML5 and Vanilla CSS3**.
+**EduLearn** is a professional, modern, and fully responsive e-learning website built using **pure semantic HTML5 and Vanilla CSS3**.
 
 Designed specifically as a high-standard web development showcase and college presentation project, EduLearn provides students with an engaging platform to discover high-quality technical courses, view in-depth curricula, register securely, track learning progress, and explore legal and support services.
 
