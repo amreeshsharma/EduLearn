@@ -1,12 +1,12 @@
-/* ==========================================================================
-   EDULEARN - HOMEPAGE STYLESHEET (css/index.css)
-   ========================================================================== */
+
+   /* EDULEARN - HOMEPAGE STYLESHEET (css/index.css) */
+  
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
-/* ==========================================================================
-   CSS VARIABLES & DESIGN TOKENS
-   ========================================================================== */
+
+   /* CSS VARIABLES & DESIGN TOKENS */
+
 :root {
     --primary: #4f46e5;
     --primary-hover: #4338ca;
