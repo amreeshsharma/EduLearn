@@ -111,7 +111,7 @@ code .
 
 
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Amreesh Sharma**  
 B.Tech — Computer Science & Engineering  
