@@ -105,7 +105,7 @@ code .
 * 💻 **Standard Desktop / Laptop:** 1366px / 1200px
 * 💻 **Tablet Landscape / Small Laptop:** 992px – 1024px
 * 📲 **Tablet Portrait:** 768px
-* 📱 **Mobile Landscape:** 576px – 640px
+
 * 📱 **Mobile Portrait:** 480px / 375px
 * 📱 **Small Mobile:** 320px
 
