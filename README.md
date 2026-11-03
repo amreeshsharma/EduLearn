@@ -87,7 +87,7 @@ git clone https://github.com/amreeshsharma/EduLearn-.git
 cd EduLearn-
 ```
 
-### 2. Launch in VS Code and antigravity
+### 2. Launch in VS CODE
 Open the project directory in VS Code:
 ```bash
 code .
