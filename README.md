@@ -81,7 +81,7 @@ EduLearn/
 
 🚀 How to Run Locally 
 
-### 1. Clone the Repository
+### 1. Clone the Repository on your vs code
 ```bash
 git clone https://github.com/amreeshsharma/EduLearn-.git
 cd EduLearn-
